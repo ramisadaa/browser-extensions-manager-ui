@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="bar">
+      <img id="mainLogo" src="./assets/images/‏‏logo2.svg" alt="Extensions logo">
+
+      <button id="themeButton" class="theme-button" type="button" aria-label="Change color theme">
+        <img id="icon" src="./assets/images/icon-sun.svg" alt="">
+      </button>
+    </div>
+
+    <div class="control">
+      <h1>Extensions List</h1>
+      <div class="mycontrolBtn">
+        <button id="AllBt" class="active-filter" type="button">All</button>
+        <button id="ActiveBt" type="button">Active</button>
+        <button id="InactiveBt" type="button">Inactive</button>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="DevLens card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-devlens.svg" alt="DevLens icon">
+          <div class="descrtion">
+            <h2>DevLens</h2>
+            <p>Quickly inspect page layouts and visualize element boundaries.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable DevLens" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="StyleSpy card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy icon">
+          <div class="descrtion">
+            <h2>StyleSpy</h2>
+            <p>Instantly analyze and copy CSS from any webpage element.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable StyleSpy" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="SpeedBoost card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost icon">
+          <div class="descrtion">
+            <h2>SpeedBoost</h2>
+            <p>Optimizes browser resource usage to accelerate page loading.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable SpeedBoost">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="JSONWizard card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard icon">
+          <div class="descrtion">
+            <h2>JSONWizard</h2>
+            <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable JSONWizard" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="TabMasterPro card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro icon">
+          <div class="descrtion">
+            <h2>TabMaster Pro</h2>
+            <p>Organizes browser tabs into groups and sessions.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable TabMaster Pro" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="ViewportBuddy card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy icon">
+          <div class="descrtion">
+            <h2>ViewportBuddy</h2>
+            <p>Simulates various screen resolutions directly within the browser.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable ViewportBuddy">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="MarkupNotes card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes icon">
+          <div class="descrtion">
+            <h2>Markup Notes</h2>
+            <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable Markup Notes" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="GridGuides card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides icon">
+          <div class="descrtion">
+            <h2>GridGuides</h2>
+            <p>Overlay customizable grids and alignment guides on any webpage.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable GridGuides">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="PalettePicker card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-palette-picker.svg" alt="Palette Picker icon">
+          <div class="descrtion">
+            <h2>Palette Picker</h2>
+            <p>Instantly extracts color palettes from any webpage.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable Palette Picker" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="LinkChecker card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker icon">
+          <div class="descrtion">
+            <h2>LinkChecker</h2>
+            <p>Scans and highlights broken links on any page.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable LinkChecker" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="DOMSnapshot card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot icon">
+          <div class="descrtion">
+            <h2>DOM Snapshot</h2>
+            <p>Capture and export DOM structures quickly.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable DOM Snapshot">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="ConsolePlus card">
+        <div class="cardicon">
+          <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus icon">
+          <div class="descrtion">
+            <h2>ConsolePlus</h2>
+            <p>Enhanced developer console with advanced filtering and logging.</p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="remove-button" type="button">Remove</button>
+          <label class="toggle-container">
+            <input type="checkbox" aria-label="Enable ConsolePlus" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
